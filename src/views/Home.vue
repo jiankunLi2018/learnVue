@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <HelloWorld msg="父组件参量"/>
-    
+    {{time}}
     <button @click="goToAbout">去about页</button>
   </div>
 </template>
@@ -12,6 +12,9 @@ import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'home',
+  data:{
+      time:'2020'
+  },
   components: {
     HelloWorld
   },
